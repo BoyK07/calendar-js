@@ -1,15 +1,13 @@
-document.addEventListener("DOMContentLoaded", function () {
-    let calendar;
-
-    calendar = new FullCalendar.Calendar(document.getElementById("calendar"), {
-        initialView: "dayGridMonth",
-        headerToolbar: {
-            left: "prev today next",
-            center: "title",
-            right: "dayGridMonth,timeGridWeek,timeGridDay",
-        },
-        editable: true,
-        events: [
+async function getEvents() {
+    try {
+        const response = await fetch("http://localhost:3000/events");
+        const events = await response.json();
+        console.debug(events);
+        return events;
+    } catch (error) {
+        console.log(error);
+        // Return placeholder events
+        return [
             {
                 id: 1,
                 title: "TESTvergadering",
@@ -22,7 +20,22 @@ document.addEventListener("DOMContentLoaded", function () {
                 start: new Date(new Date().getTime() + 86400000),
                 allDay: true,
             },
-        ],
+        ];
+    }
+}
+
+document.addEventListener("DOMContentLoaded", async function () {
+    let calendar;
+
+    calendar = new FullCalendar.Calendar(document.getElementById("calendar"), {
+        initialView: "dayGridMonth",
+        headerToolbar: {
+            left: "prev today next",
+            center: "title",
+            right: "dayGridMonth,timeGridWeek,timeGridDay",
+        },
+        editable: true,
+        events: await getEvents(),
         buttonText: {
             today: "Vandaag",
             month: "Maand",

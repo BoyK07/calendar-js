@@ -111,6 +111,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
         if (window.calendarInstance) {
             window.calendarInstance.getEventById(id).remove();
+            saveEvent("DELETE", id);
         }
 
         closeEventModal();
@@ -137,15 +138,65 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
     /*
+    * Handle saving the event to the backend
+    */
+    async function saveEvent(method, eventData) {
+        var response = ""; // Placeholder for the response
+        try {
+            switch (method) {
+                case "POST":
+                    response = await fetch("http://localhost:3000/events", {
+                        method: "POST",
+                        headers: {
+                            "Content-Type": "application/json",
+                        },
+                        body: JSON.stringify(eventData),
+                    });
+                    break;
+
+                case "PUT":
+                    response = await fetch(`http://localhost:3000/events/${eventData.id}`, {
+                        method: "PUT",
+                        headers: {
+                            "Content-Type": "application/json",
+                        },
+                        body: JSON.stringify(eventData),
+                    });
+                    break;
+
+                case "DELETE":
+                    response = await fetch("http://localhost:3000/events/${eventData}", {
+                        method: "DELETE",
+                        headers: {
+                            "Content-Type": "application/json",
+                        },
+                    });
+                    break;
+                    
+                default:
+                    break;
+            }
+        } catch (error) {
+            console.log(error);
+            return false;
+        }
+
+        // No need to do anything with the response
+        // const newEvent = await response.json();
+        return true;
+    }
+
+    /*
     * Handle the form submission
     */
-    eventForm.addEventListener("submit", (e) => {
+    eventForm.addEventListener("submit", async (e) => {
         e.preventDefault();
 
         const title = document.getElementById("eventTitle").value;
         const start = document.getElementById("eventStart").value;
         const end = document.getElementById("eventEnd").value;
         var id = 0;
+
         // Get the latest available Id if this is a new event, otherwise just get the event ID
         if (eventExists) {
             id = document.getElementById("eventID").value;
@@ -174,10 +225,12 @@ document.addEventListener("DOMContentLoaded", function () {
 
         // Use the global calendar instance
         if (window.calendarInstance) {
+            // If the event exists, remove it and add the updated event to prevent duplicates
             if (eventExists) {
                 window.calendarInstance.getEventById(id).remove();
             }
             window.calendarInstance.addEvent(eventData);
+            await saveEvent(eventExists ? "PUT" : "POST", eventData);
         }
 
         closeEventModal();
