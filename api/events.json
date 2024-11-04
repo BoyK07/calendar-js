@@ -1,193 +1,200 @@
 {
-    "events": [
-        {
-            "id": 1,
-            "title": "Vergadering 1",
-            "start": "2024-01-05T10:00:00",
-            "end": "2024-01-05T12:00:00",
-            "description": "Teamvergadering over project A."
-        },
-        {
-            "id": 2,
-            "title": "Feest 1",
-            "start": "2024-01-10T18:00:00",
-            "end": "2024-01-10T23:00:00",
-            "description": "Verjaardagsfeest van Jan."
-        },
-        {
-            "id": 3,
-            "title": "Conferentie 1",
-            "start": "2024-02-15T09:00:00",
-            "end": "2024-02-16T17:00:00",
-            "description": "Internationale conferentie over technologie."
-        },
-        {
-            "id": 4,
-            "title": "Training 1",
-            "start": "2024-03-03T14:00:00",
-            "end": "2024-03-03T16:30:00",
-            "description": "Training voor nieuwe medewerkers."
-        },
-        {
-            "id": 5,
-            "title": "Workshop 1",
-            "start": "2024-04-20T10:00:00",
-            "end": "2024-04-20T12:30:00",
-            "description": "Workshop over grafisch ontwerp."
-        },
-        {
-            "id": 6,
-            "title": "Concert 1",
-            "start": "2024-05-10T19:30:00",
-            "end": "2024-05-10T22:00:00",
-            "description": "Live concert van favoriete band."
-        },
-        {
-            "id": 7,
-            "title": "Sportevenement 1",
-            "start": "2024-06-08T16:00:00",
-            "end": "2024-06-08T18:30:00",
-            "description": "Voetbalwedstrijd in het stadion."
-        },
-        {
-            "id": 8,
-            "title": "Festival 1",
-            "start": "2024-07-15T12:00:00",
-            "end": "2024-07-17T23:59:59",
-            "description": "Jaarlijks muziek- en kunstfestival."
-        },
-        {
-            "id": 9,
-            "title": "Conferentie 2",
-            "start": "2024-08-22T08:30:00",
-            "end": "2024-08-23T18:00:00",
-            "description": "Academische conferentie over innovatie."
-        },
-        {
-            "id": 10,
-            "title": "Symposium 1",
-            "start": "2024-09-05T09:00:00",
-            "end": "2024-09-05T17:00:00",
-            "description": "Symposium over duurzaamheid en milieu."
-        },
-        {
-            "id": 11,
-            "title": "Cursus 1",
-            "start": "2024-10-12T13:00:00",
-            "end": "2024-10-12T16:00:00",
-            "description": "Cursus voor professionals in de financiële sector."
-        },
-        {
-            "id": 12,
-            "title": "Beurs 1",
-            "start": "2024-11-20T10:00:00",
-            "end": "2024-11-22T18:00:00",
-            "description": "Internationale handelsbeurs."
-        },
-        {
-            "id": 13,
-            "title": "Lezing 1",
-            "start": "2024-12-08T15:00:00",
-            "end": "2024-12-08T17:00:00",
-            "description": "Gastlezing door vooraanstaande professor."
-        },
-        {
-            "id": 14,
-            "title": "Concert 2",
-            "start": "2024-01-15T20:00:00",
-            "end": "2024-01-15T23:00:00",
-            "description": "Klassiek concert in het theater."
-        },
-        {
-            "id": 15,
-            "title": "Sportevenement 2",
-            "start": "2024-02-28T17:30:00",
-            "end": "2024-02-28T20:00:00",
-            "description": "Basketbalwedstrijd van lokale teams."
-        },
-        {
-            "id": 16,
-            "title": "Festival 2",
-            "start": "2024-03-05T12:00:00",
-            "end": "2024-03-07T23:59:59",
-            "description": "Cultureel festival met eten en muziek."
-        },
-        {
-            "id": 17,
-            "title": "Workshop 2",
-            "start": "2024-04-10T09:00:00",
-            "end": "2024-04-10T12:30:00",
-            "description": "Workshop over webontwikkeling."
-        },
-        {
-            "id": 18,
-            "title": "Vergadering 2",
-            "start": "2024-05-20T11:00:00",
-            "end": "2024-05-20T13:00:00",
-            "description": "Bespreking van kwartaalresultaten."
-        },
-        {
-            "id": 19,
-            "title": "Symposium 2",
-            "start": "2024-06-25T09:30:00",
-            "end": "2024-06-25T16:30:00",
-            "description": "Symposium over gezondheidszorg en innovatie."
-        },
-        {
-            "id": 20,
-            "title": "Cursus 2",
-            "start": "2024-07-18T14:00:00",
-            "end": "2024-07-18T17:00:00",
-            "description": "Cursus over marketingstrategieën."
-        },
-        {
-            "id": 21,
-            "title": "Lezing 2",
-            "start": "2024-08-05T15:30:00",
-            "end": "2024-08-05T18:00:00",
-            "description": "Lezing door bekende auteur."
-        },
-        {
-            "id": 22,
-            "title": "Feest 2",
-            "start": "2024-09-14T19:00:00",
-            "end": "2024-09-14T23:00:00",
-            "description": "Jubileumfeest van bedrijf X."
-        },
-        {
-            "id": 23,
-            "title": "Conferentie 3",
-            "start": "2024-10-20T09:00:00",
-            "end": "2024-10-21T18:00:00",
-            "description": "Technologieconferentie met wereldwijde sprekers."
-        },
-        {
-            "id": 24,
-            "title": "Training 2",
-            "start": "2024-11-08T13:00:00",
-            "end": "2024-11-08T16:00:00",
-            "description": "Training over leiderschap."
-        },
-        {
-            "id": 25,
-            "title": "Workshop 3",
-            "start": "2024-12-10T10:00:00",
-            "end": "2024-12-10T12:30:00",
-            "description": "Workshop over kunst en creativiteit."
-        },
-        {
-            "id": 26,
-            "title": "Concert 3",
-            "start": "2024-01-25T20:00:00",
-            "end": "2024-01-25T23:00:00",
-            "description": "Popconcert in het stadion."
-        },
-        {
-            "id": 27,
-            "title": "Sportevenement 3",
-            "start": "2024-02-12T17:00:00",
-            "end": "2024-02-12T19:30:00",
-            "description": "Hockeywedstrijd van lokale teams."
-        }
-    ]
+  "events": [
+    {
+      "id": 1,
+      "title": "Vergadering 1",
+      "start": "2024-01-05T10:00:00",
+      "end": "2024-01-05T12:00:00",
+      "description": "Teamvergadering over project A."
+    },
+    {
+      "id": 2,
+      "title": "Feest 1",
+      "start": "2024-01-10T18:00:00",
+      "end": "2024-01-10T23:00:00",
+      "description": "Verjaardagsfeest van Jan."
+    },
+    {
+      "id": 3,
+      "title": "Conferentie 1",
+      "start": "2024-02-15T09:00:00",
+      "end": "2024-02-16T17:00:00",
+      "description": "Internationale conferentie over technologie."
+    },
+    {
+      "id": 4,
+      "title": "Training 1",
+      "start": "2024-03-03T14:00:00",
+      "end": "2024-03-03T16:30:00",
+      "description": "Training voor nieuwe medewerkers."
+    },
+    {
+      "id": 5,
+      "title": "Workshop 1",
+      "start": "2024-04-20T10:00:00",
+      "end": "2024-04-20T12:30:00",
+      "description": "Workshop over grafisch ontwerp."
+    },
+    {
+      "id": 6,
+      "title": "Concert 1",
+      "start": "2024-05-10T19:30:00",
+      "end": "2024-05-10T22:00:00",
+      "description": "Live concert van favoriete band."
+    },
+    {
+      "id": 7,
+      "title": "Sportevenement 1",
+      "start": "2024-06-08T16:00:00",
+      "end": "2024-06-08T18:30:00",
+      "description": "Voetbalwedstrijd in het stadion."
+    },
+    {
+      "id": 8,
+      "title": "Festival 1",
+      "start": "2024-07-15T12:00:00",
+      "end": "2024-07-17T23:59:59",
+      "description": "Jaarlijks muziek- en kunstfestival."
+    },
+    {
+      "id": 9,
+      "title": "Conferentie 2",
+      "start": "2024-08-22T08:30:00",
+      "end": "2024-08-23T18:00:00",
+      "description": "Academische conferentie over innovatie."
+    },
+    {
+      "id": 10,
+      "title": "Symposium 1",
+      "start": "2024-09-05T09:00:00",
+      "end": "2024-09-05T17:00:00",
+      "description": "Symposium over duurzaamheid en milieu."
+    },
+    {
+      "id": 11,
+      "title": "Cursus 1",
+      "start": "2024-10-12T13:00:00",
+      "end": "2024-10-12T16:00:00",
+      "description": "Cursus voor professionals in de financiële sector."
+    },
+    {
+      "id": 12,
+      "title": "Beurs 1",
+      "start": "2024-11-20T10:00:00",
+      "end": "2024-11-22T18:00:00",
+      "description": "Internationale handelsbeurs."
+    },
+    {
+      "id": 13,
+      "title": "Lezing 1",
+      "start": "2024-12-08T15:00:00",
+      "end": "2024-12-08T17:00:00",
+      "description": "Gastlezing door vooraanstaande professor."
+    },
+    {
+      "id": 14,
+      "title": "Concert 2",
+      "start": "2024-01-15T20:00:00",
+      "end": "2024-01-15T23:00:00",
+      "description": "Klassiek concert in het theater."
+    },
+    {
+      "id": 15,
+      "title": "Sportevenement 2",
+      "start": "2024-02-28T17:30:00",
+      "end": "2024-02-28T20:00:00",
+      "description": "Basketbalwedstrijd van lokale teams."
+    },
+    {
+      "id": 16,
+      "title": "Festival 2",
+      "start": "2024-03-05T12:00:00",
+      "end": "2024-03-07T23:59:59",
+      "description": "Cultureel festival met eten en muziek."
+    },
+    {
+      "id": 17,
+      "title": "Workshop 2",
+      "start": "2024-04-10T09:00:00",
+      "end": "2024-04-10T12:30:00",
+      "description": "Workshop over webontwikkeling."
+    },
+    {
+      "id": 18,
+      "title": "Vergadering 2",
+      "start": "2024-05-20T11:00:00",
+      "end": "2024-05-20T13:00:00",
+      "description": "Bespreking van kwartaalresultaten."
+    },
+    {
+      "id": 19,
+      "title": "Symposium 2",
+      "start": "2024-06-25T09:30:00",
+      "end": "2024-06-25T16:30:00",
+      "description": "Symposium over gezondheidszorg en innovatie."
+    },
+    {
+      "id": 20,
+      "title": "Cursus 2",
+      "start": "2024-07-18T14:00:00",
+      "end": "2024-07-18T17:00:00",
+      "description": "Cursus over marketingstrategieën."
+    },
+    {
+      "id": 21,
+      "title": "Lezing 2",
+      "start": "2024-08-05T15:30:00",
+      "end": "2024-08-05T18:00:00",
+      "description": "Lezing door bekende auteur."
+    },
+    {
+      "id": 22,
+      "title": "Feest 2",
+      "start": "2024-09-14T19:00:00",
+      "end": "2024-09-14T23:00:00",
+      "description": "Jubileumfeest van bedrijf X."
+    },
+    {
+      "id": 23,
+      "title": "Conferentie 3",
+      "start": "2024-10-20T09:00:00",
+      "end": "2024-10-21T18:00:00",
+      "description": "Technologieconferentie met wereldwijde sprekers."
+    },
+    {
+      "id": 24,
+      "title": "Training 2",
+      "start": "2024-11-08T13:00:00",
+      "end": "2024-11-08T16:00:00",
+      "description": "Training over leiderschap."
+    },
+    {
+      "id": 25,
+      "title": "Workshop 3",
+      "start": "2024-12-10T10:00:00",
+      "end": "2024-12-10T12:30:00",
+      "description": "Workshop over kunst en creativiteit."
+    },
+    {
+      "id": 26,
+      "title": "Concert 3",
+      "start": "2024-01-25T20:00:00",
+      "end": "2024-01-25T23:00:00",
+      "description": "Popconcert in het stadion."
+    },
+    {
+      "id": 27,
+      "title": "Sportevenement 3",
+      "start": "2024-02-12T17:00:00",
+      "end": "2024-02-12T19:30:00",
+      "description": "Hockeywedstrijd van lokale teams."
+    },
+    {
+      "id": 28,
+      "title": "t",
+      "start": "2024-11-04T08:44",
+      "end": "2024-11-04T09:44",
+      "allDay": true
+    }
+  ]
 }

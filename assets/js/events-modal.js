@@ -32,6 +32,10 @@ document.addEventListener("DOMContentLoaded", function () {
                 document.getElementById("eventEnd").removeAttribute("disabled");
             }
         } else { 
+            // If event does not exist, reset the modal
+            allDayEventCheckbox.checked = false;
+            eventTime.style.display = "block";
+
             eventExists = false;
             modalTitle.textContent = "Nieuw evenement";
             deleteEventBtn.style.display = "none";
@@ -172,7 +176,7 @@ document.addEventListener("DOMContentLoaded", function () {
                         },
                     });
                     break;
-                    
+
                 default:
                     break;
             }
