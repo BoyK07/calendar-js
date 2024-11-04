@@ -169,7 +169,7 @@ document.addEventListener("DOMContentLoaded", function () {
                     break;
 
                 case "DELETE":
-                    response = await fetch("http://localhost:3000/events/${eventData}", {
+                    response = await fetch(`http://localhost:3000/events/${eventData}`, {
                         method: "DELETE",
                         headers: {
                             "Content-Type": "application/json",
